@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating Web Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Validating Web Form</h1>
+     <div  class="name">
+        <label>First Name</label>
+        <input oninput= "firstNamekey()" type="text" id="Fname">
+     </div>
+     <p id="firstNameError"></p>
+
+     <div class="name">
+        <label>Last Name</label>
+        <input oninput="lastNameKey()" type="text" id="lname" >
+     </div>
+     <p id="lasttNameError" ></p>
+
+     <div class="name">
+        <label>Email</label>
+        <input oninput="emailKey()" type="email" id="email" >
+     </div>
+     <p id="emailError"></p>
+
+
+     <div  class="name">
+        <label>Password</label>
+        <input oninput="passKey()" type="Password" id="Password">
+     </div>
+    <p id="passError"></p>
+
+     <div class="name">
+        <label>Telephone</label>
+        <input oninput="PhoneNumberKey()" type="Number" id="Telephone" >
+     </div>
+     <p id="phoneNumberError"></p>
+
+
+     <div class="name">
+        <label>Your Bio</label>
+        <input oninput="bioKey() " type="text" id="Bio" >
+     </div>
+     <p id="bioError"></p>
+     <div class="name">
+        <button onclick="submitData()" id="button" >Submit</button>
+     </div>
+
+    </div>
+</body>
+</html>
